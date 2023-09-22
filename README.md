@@ -35,7 +35,7 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 
 **Outcome:**
 
-- A function `backtracking_stats` was made which uses a sequence and its starting value to determine whether the sequence backtracks, the number of times the sequence goes above their starting integer (`above_count`), and the maximum value reached after the first backtrack for the sequence (`max_after_backtrack`). The function then prints the information in the order above.
+- A function `backtracking_stats` was made which uses a sequence and its starting value to determine whether the sequence backtracks, the number of times the sequence goes above their starting integer (`above_count`), and the maximum value reached after the first backtrack for the sequence (`max_after_backtrack`). The function then prints the information in the order above. Note that the function will print an `above_count` of zero if the sequence does not backtrack, which may be false.
 - A new data frame, `backtracks_df`, (based on the initial `collatz_df` data frame) is made. `backtracks_df` contains only backtracking sequences, and now includes the additional information from the `backtracking_stats` function.
 - `mode_backtrack` provides information about the most frequently occurring number of times they go above their starting integer[^1].
 - `even_odd_backtrack` gives the frequency counts of even and odd backtracking integers, in that order.
