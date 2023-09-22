@@ -25,6 +25,10 @@ backtracking_stats <- function(seq, start){
         max_after_backtrack <-i
       }
     }
+    
+    if(!decrease && i > start){
+      above_count <- above_count + 1
+    }
   }
   return(list(backtracking, above_count, max_after_backtrack))
 }
