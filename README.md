@@ -49,5 +49,5 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 - Task 4: @author2
 - Task 5: @author4
 - Task 6: @author1
-- README: @nhfizhn, ...
+- README: @nhfizhn, @nichongy
 - other tasks…
