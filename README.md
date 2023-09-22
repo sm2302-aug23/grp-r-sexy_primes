@@ -37,7 +37,7 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 
 - Task 1: @nhfizhn
 - Task 2: @jadotj
-- Task 3: @author3
+- Task 3: @nichongy
 - Task 4: @author2
 - Task 5: @author4
 - Task 6: @author1
