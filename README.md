@@ -39,6 +39,7 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 - A new data frame, `backtracks_df`, (based on the initial `collatz_df` data frame) is made. `backtracks_df` contains only backtracking sequences, and now includes the additional information from the `backtracking_stats` function.
 - `mode_backtrack` provides information about the statistical mode of the number of times the sequence goes above their starting integer[^1].
 - `even_odd_backtrack` gives the frequency counts of even and odd backtracking integers, in that order.
+
 [^1]This part of the task utilizes code by [Ken Williams](https://stackoverflow.com/questions/2547402/how-to-find-the-statistical-mode)
 
 #### Contribution declaration
