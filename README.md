@@ -29,6 +29,24 @@ In this task, we implemented a solution to the *Collatz Conjecture*, which invol
 Stored the results in a tibble (`collatz_df`) with columns for starting values and *Collatz* sequences.
 - This analysis provides a clear understanding of how the *Collatz Conjecture* was approached and what the resulting data structure contains.
 
+### Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value
+
+top10longest is to find the top 10 starting integers in the longest Collatz sequences.
+
+max_val_int is the starting integer with highest maximum value in a Collatz sequence.
+
+The even_odd_summary is summary statistics for even and odd starting integers, the average length and standard deviation for each group.
+
+extract the individual average length and standard deviation values for even and odd starting integers:
+
+even_odd_avg_len <- even_odd_summary$even_odd_avg_len keep the average length for even and odd starting integers.
+
+even_odd_sd_len <- even_odd_summary$even_odd_sd_len keep the standard deviation for even and odd starting integers.
+
+**Outcome:**
+
+- Determined the starting integer with the highest maximum value in its sequence.
+
 ### 3) Investigating "backtracking" in sequences
 
 "Backtracking" occurs when a sequence reaches a value that is less than the starting integer, but then increases again above the starting integer at least once before reaching 1. We were tasked to explore the concept of “backtracking” within the *Collatz Conjecture*.
@@ -50,5 +68,5 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 - Task 4: @author2
 - Task 5: @author4
 - Task 6: @author1
-- README: @nhfizhn, @nichongy
+- README: @nhfizhn,@jadotj ,@nichongy
 - other tasks…
