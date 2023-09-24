@@ -11,23 +11,22 @@ plot1 <- ggplot(collatz_df, aes(x = start, y = length)) +
 #To obtain highest values in length
 collatz_highest <- filter(collatz_df, length > 200) 
 
-#Converting list (top10longest) to tibble
-top10 <- as_tibble(top10longest)
+view(collatz_highest)
 
+#Subset of points to highlight according to top10longest list
+top10longest
+top10 <- collatz_highest[c(16, 42, 20, 27, 40, 18, 46, 47, 23, 24), ]
 
 plot2 <- ggplot(collatz_highest, aes(x = start, y = length)) +
-  geom_point() + labs(x = "Starting Integers", y = "Length of Sequence")
+  geom_point() + geom_point(data = top10, aes(x = start, y = length), colour = "red")+
+  labs(x = "Starting Integers", y = "Length of Sequence")
    
-top10longest <- collatz_df %>%
-  arrange(desc(length)) %>%
-  slice_head(n = 10) %>%
-  pull(start)
 
 
 
 #3 plot
 
-ggplot(collatz_df, )
+ggplot(collatz_df) + geom_boxplot(aes())
 
 
 
