@@ -33,38 +33,3 @@ plot2 <- ggplot(collatz_highest, aes(x = start, y = length)) +
 #3 plot--------------------------------------------------------------------------------
 
 ggplot(collatz_df) + geom_boxplot(aes(length, parity))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
