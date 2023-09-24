@@ -34,18 +34,15 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 In this task, we conducted exploratory data analysis on the Collatz sequences generated in Task 1. The analysis involved answering several questions using `{tidyverse}` data wrangling techniques.
 
 **Question 1: Find the top 10 starting integers that produce the longest sequences**
-
 To answer this question, we sorted the `collatz_df` tibble in descending order of sequence length and selected the top 10 rows. These rows represent the starting integers that produce the longest Collatz sequences.
 
 **Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value**
-
 For this question, we searched for the starting integer that results in the highest maximum value within its sequence. This allows us to identify the integer that produces the most significant maximum value.
 
 **Question 3: What is the average length and standard deviation of the sequence for even starting integers compared to odd ones?**
-
 To answer this question, we calculated the average length and standard deviation of sequences separately for even and odd starting integers. This analysis helps us understand the distribution of sequence lengths between these two categories.
 
-Below are the variables we made use of to for answering the questions:
+Below are the variables we made use of for answering the questions:
 
 - `top10longest` is to find the top 10 starting integers in the longest Collatz sequences.
 
