@@ -1,10 +1,17 @@
 #1 plot--------------------------------------------------------------------------
 
 plot1 <- ggplot(collatz_df, aes(x = start, y = length)) + 
-  geom_point() + labs(x = "Starting Integers", y = "Length of Sequence")
+  geom_point() + 
+  labs(x = "Starting Integers", y = "Length of Sequence")
 
 #Top 10 starting integers are > 200 in length 
+top_10_starting_integers <- collatz_df %>%
+  arrange(desc(length)) %>%
+  head(10) 
 
+#Highlight the top 10 starting integers
+plot1 + 
+  geom_point(data = top_10_starting_integers, aes(color = "Top 10"))
     
 #2 plot-------------------------------------------------------------------------------
 
