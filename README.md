@@ -29,23 +29,41 @@ In this task, we implemented a solution to the *Collatz Conjecture*, which invol
 Stored the results in a tibble (`collatz_df`) with columns for starting values and *Collatz* sequences.
 - This analysis provides a clear understanding of how the *Collatz Conjecture* was approached and what the resulting data structure contains.
 
-### Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value
+### 2) Exploratory Data Analysis
 
-`top10longest` is to find the top 10 starting integers in the longest Collatz sequences.
+In this task, we conducted exploratory data analysis on the Collatz sequences generated in Task 1. The analysis involved answering several questions using `{tidyverse}` data wrangling techniques.
 
-`max_val_int` is the starting integer with highest maximum value in a Collatz sequence.
+**Question 1: Find the top 10 starting integers that produce the longest sequences**
 
-`The even_odd_summary` is summary statistics for even and odd starting integers, the average length and standard deviation for each group.
+To answer this question, we sorted the `collatz_df` tibble in descending order of sequence length and selected the top 10 rows. These rows represent the starting integers that produce the longest Collatz sequences.
 
-extract the individual average length and standard deviation values for even and odd starting integers:
+**Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value**
 
-`even_odd_avg_len <- even_odd_summary$even_odd_avg_len` keep the average length for even and odd starting integers.
+For this question, we searched for the starting integer that results in the highest maximum value within its sequence. This allows us to identify the integer that produces the most significant maximum value.
 
-`even_odd_sd_len <- even_odd_summary$even_odd_sd_len` keep the standard deviation for even and odd starting integers.
+**Question 3: What is the average length and standard deviation of the sequence for even starting integers compared to odd ones?**
+
+To answer this question, we calculated the average length and standard deviation of sequences separately for even and odd starting integers. This analysis helps us understand the distribution of sequence lengths between these two categories.
+
+Below are the variables we made use of to for answering the questions:
+
+- `top10longest` is to find the top 10 starting integers in the longest Collatz sequences.
+
+- `max_val_int` is the starting integer with highest maximum value in a Collatz sequence.
+
+- `even_odd_summary` is the summary statistics for even and odd starting integers, consisting the average length and standard deviation for each group.
+
+Extractions of the individual average length and standard deviation values for even and odd starting integers:
+
+- `even_odd_avg_len <- even_odd_summary$even_odd_avg_len` keep the average length for even and odd starting integers.
+
+- `even_odd_sd_len <- even_odd_summary$even_odd_sd_len` keep the standard deviation for even and odd starting integers.
 
 **Outcome:**
 
+- Identified the top 10 starting integers with the longest sequences.
 - Determined the starting integer with the highest maximum value in its sequence.
+- Calculated the average length and standard deviation of Collatz sequences for even and odd starting integers.
 
 ### 3) Investigating "backtracking" in sequences
 
