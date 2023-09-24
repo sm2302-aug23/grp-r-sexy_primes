@@ -86,5 +86,5 @@ Extractions of the individual average length and standard deviation values for e
 - Task 4: @author2
 - Task 5: @author4
 - Task 6: @author1
-- README: @nhfizhn,@jadotj ,@nichongy
+- README: @nhfizhn, @jadotj, @nichongy
 - other tasks…
