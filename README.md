@@ -55,9 +55,9 @@ Below are the variables we made use of for answering the questions:
 
 Extractions of the individual average length and standard deviation values for even and odd starting integers:
 
-- `even_odd_avg_len <- even_odd_summary$even_odd_avg_len` keep the average length for even and odd starting integers.
+- `even_odd_avg_len` keep the average length for even and odd starting integers.
 
-- `even_odd_sd_len <- even_odd_summary$even_odd_sd_len` keep the standard deviation for even and odd starting integers.
+- `even_odd_sd_len` keep the standard deviation for even and odd starting integers.
 
 **Outcome:**
 
