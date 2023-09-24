@@ -31,17 +31,17 @@ Stored the results in a tibble (`collatz_df`) with columns for starting values a
 
 ### Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value
 
-top10longest is to find the top 10 starting integers in the longest Collatz sequences.
+`top10longest` is to find the top 10 starting integers in the longest Collatz sequences.
 
-max_val_int is the starting integer with highest maximum value in a Collatz sequence.
+`max_val_int` is the starting integer with highest maximum value in a Collatz sequence.
 
-The even_odd_summary is summary statistics for even and odd starting integers, the average length and standard deviation for each group.
+`The even_odd_summary` is summary statistics for even and odd starting integers, the average length and standard deviation for each group.
 
 extract the individual average length and standard deviation values for even and odd starting integers:
 
-even_odd_avg_len <- even_odd_summary$even_odd_avg_len keep the average length for even and odd starting integers.
+`even_odd_avg_len <- even_odd_summary$even_odd_avg_len` keep the average length for even and odd starting integers.
 
-even_odd_sd_len <- even_odd_summary$even_odd_sd_len keep the standard deviation for even and odd starting integers.
+`even_odd_sd_len <- even_odd_summary$even_odd_sd_len` keep the standard deviation for even and odd starting integers.
 
 **Outcome:**
 
