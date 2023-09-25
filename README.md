@@ -16,8 +16,8 @@ submission instructions and marking rubric.
     4. [Visualisations](#4-visualisations)
     5. [Open-ended exploration - Frequency of Prime Numbers](#5-open-ended-exploration---frequency-of-prime-numbers)
     6. [Creative visualisation challenge](#6-creative-visualisation-challenge)
-        6.1. [Visualising Prime Counts in *Collatz Conjecture*](#61-visualising-prime-counts-in-collatz-conjecture)
-        6.2. [Visualising Frequency of Sequence Lengths](#62-visualising-frequency-of-sequence-lengths)
+        1. [Visualising Prime Counts in *Collatz Conjecture*](#61-visualising-prime-counts-in-collatz-conjecture)
+        2. [Visualising Frequency of Sequence Lengths](#62-visualising-frequency-of-sequence-lengths)
 - [Contribution declaration](#contribution-declaration)
 
 
