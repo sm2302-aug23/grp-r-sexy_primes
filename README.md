@@ -124,7 +124,7 @@ We conducted an open-ended exploration of the data, focusing on the frequency of
 -Although $2$ occurs in all sequences (except for when the starting integer is $1$) and $5$ occurs in 94% of sequences, $3$ only occurs 12 times.
 -The most frequently occurring
 
-1 digit prime is $5$ occurring 9400 times;
+1 digit prime after $2$ and $5$ is $7$ occurring 1848 times;
 
 2 digit prime is $53$ occurring 4693 times;
 
