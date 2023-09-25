@@ -1,3 +1,5 @@
+# Task 2 - Exploratory data analysis
+
 #1 Find the top 10 starting integers that produce the longest sequences
 top10longest <- collatz_df %>%
   arrange(desc(length)) %>%

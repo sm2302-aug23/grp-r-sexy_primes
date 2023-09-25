@@ -1,3 +1,5 @@
+# Task 3 - Investigating "backtracking' in sequences
+
 #Function to check if a sequence is backtracking
 backtracking_stats <- function(seq, start){
   #Initializing
