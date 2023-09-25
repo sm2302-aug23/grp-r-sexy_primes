@@ -1,28 +1,23 @@
-#prime lengths vs non prime lengths
-prime_lengths <- (filter(primes_df, prime == TRUE))$length
-non_prime_lengths <- (filter(primes_df, prime == FALSE))$length
+# Task 6 - Creative visualisation challenge
 
-length_comparison <- data.frame(
-  group = factor(rep(c("Prime","Non-Prime"), each = 10)),
-  sequence_length = c(prime_lengths, non_prime_lengths)
-)
+library(primes)
 
-ggplot(length_comparison, aes(x = group, y = sequence_length, fill = group)) +
-  geom_boxplot() +
-  labs(x = "Group", y = "Sequence Length") +
-  ggtitle("Comparison of Sequence Lengths for Prime and Non-Prime Starting Integers")
+# create a vector to store the count of prime numbers in Collatz sequences
+prime_counts <- integer(10000)
 
-#frequency each prime number appears in a sequence
-freq_prime <- (collatz_df$seq)[-1] %>%
-  unlist() %>%
-  table() %>%
-  as.data.frame() %>%
-  mutate(., prime = is_prime(.)) %>%
-  filter(., prime == TRUE) %>%
-  arrange(., desc(Freq))
-colnames(freq_prime) <- c("start", "freq", "prime")
-  
-ggplot(freq_prime, aes (x = 1:2432, y = freq))+
-  geom_line() 
+# calculate prime counts for each starting integer
+for (i in 1:10000) {
+  collatz_seq <- gen_collatz(i)  # generate Collatz sequence
+  prime_count <- sum(sapply(collatz_seq, is_prime))  # count prime numbers
+  prime_counts[i] <- prime_count
+}
 
+# visualisation
+library(ggplot2)
 
+collatz_prime_plot <- ggplot() +
+  geom_bar(mapping = aes(x = 1:10000, y = prime_counts), stat = "identity") +
+  labs(x = "Starting Integers", y = "Count of Prime Numbers", title = "Frequency of Prime Numbers in Collatz Sequences")
+
+# display the plot
+print(collatz_prime_plot)
