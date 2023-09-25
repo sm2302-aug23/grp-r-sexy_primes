@@ -171,24 +171,19 @@ To enhance the interpretation of the plot, we added a legend-like information se
 
 #### 6.2) Visualising Frequency of Sequence Lengths
 
-We also aimed to visualise the frequency of unique *Collatz* sequences generated for integers ranging from $1$ to $10,000$. The objective was to identify and  visualise how many unique sequences exist and how often each sequence length occurs.
+We also aimed to visualise the frequency of *Collatz* sequence lengths generated for integers ranging from $1$ to $10,000$. The objective was to identify and visualise how often each sequence length occurs. Initially, we wanted to visualise this for unique sequences, but discovered that all sequences were unique.
 
 **Implementation:**
 
-- Initialized an empty list, `unique_sequences`, to store unique *Collatz* sequences.
-- Converted each sequence with starting integer from $1$ to $10,000$ into a string representation, `collatz_str`.
-- Checked if `collatz_str` was already in `unique_sequences`, and if not, appended it.
-- Counted the total number of unique Collatz sequences as `num_unique_sequences`.
-- Calculated the lengths of unique sequences by splitting each sequence string and counting the elements.
-- Created a data frame, `sequence_length_df`, with a "Length" column containing the sequence lengths.
-- Used `{ggplot2}` to create a bar plot visualizing the frequency of sequence lengths. The x-axis represented sequence lengths, and the y-axis represented frequency.
+-Subset the `length` column from `collatz_df`
+-Created a bar plot visualising the frequency of sequence lengths. The x-axis represented sequence lengths, and the y-axis represented frequency.
 
 **Outcome:**
 
 ![Freq of unique sequence lengths](Rplot6.png)
 
-- Identified unique *Collatz* sequence lengths counts.
-- Represented the distribution of unique *Collatz* sequence lengths and their frequencies.
+- Identified *Collatz* sequence lengths counts.
+- Represented the distribution of *Collatz* sequence lengths and their frequencies.
 
 #### Contribution declaration
 
