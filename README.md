@@ -97,7 +97,7 @@ In this task, we utilized the `{ggplot2}` library to create appropriate visualiz
 **Question : Are there any noticeable differences?**
 
 - Through these boxplots, we may observe that the *odd numbers* have generated *longer sequences* than *even numbers*.
-- Also, *outliers* may be observed just beyond the maximum value of the *odd parity boxplot* while there exists *none* within the *even boxplot*.
+- Also, *outliers* may be observed just beyond the maximum value of the *odd parity boxplot* while there exists *none* within the extremes of the *even boxplot*.
 
 ### 5) Open-ended exploration - Frequency of Prime Numbers
 
