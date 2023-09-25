@@ -28,9 +28,11 @@ top10 <- collatz_highest[c(16, 42, 20, 27, 40, 18, 46, 47, 23, 24), ]
 
 plot2 <- ggplot(collatz_df, aes(x = start, y = max_val)) +
   geom_point() + 
-  geom_point(data = top_10_starting_integers, aes(x = start, y = max_val), colour = "red") +
-  labs(x = "Starting Integers", y = "Max Value")
-   
+  geom_point(data = top_10_starting_integers, aes(x = start, y = max_val, color = "Top 10")) +
+  labs(x = "Starting Integers", y = "Max Value") +
+  scale_color_manual(values = "red")
+
+plot2
 
 #3 plot--------------------------------------------------------------------------------
 
