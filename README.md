@@ -96,7 +96,15 @@ In this task, we utilized the `{ggplot2}` library to create appropriate visualiz
 
 ### 5) Open-ended exploration
 
+We conducted an open-ended exploration of the data, focusing on the frequency of prime numbers within Collatz sequences. The primary goal was to identify the prime numbers that appear most frequently in the sequences.
 
+**Implementation:**
+
+
+
+**Outcome:**
+
+- Identified and presented the top 10 prime numbers that appeared with the highest frequency in the Collatz sequences.
 
 ### 6) Creative visualisation challenge - Visualising Prime Counts in *Collatz Conjecture*
 
