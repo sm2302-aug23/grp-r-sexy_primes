@@ -78,13 +78,26 @@ Extractions of the individual average length and standard deviation values for e
 
 [^1]: This part of the task utilizes a statistical mode function by Ken Williams found [here](https://stackoverflow.com/questions/2547402/how-to-find-the-statistical-mode).
 
+### 4) Visualisations
+
+**Part (1)** 
+![Scatterplot of Sequence Lengths and Starting Integers](Plot#1.jpeg)
+
+**Part (2)**
+![Scatterplot of Max Values and Starting Integers](Plot#2.jpeg)
+
+**Part (3)**
+![Boxplot of Parity and Length](Plot#3.jpeg)
+
+
+
 #### Contribution declaration
 
 - Task 1: @nhfizhn
 - Task 2: @jadotj
 - Task 3: @nichongy
-- Task 4: @author2
+- Task 4: @AzharAmiin, @nhfizhn
 - Task 5: @author4
 - Task 6: @author1
-- README: @nhfizhn, @jadotj, @nichongy
+- README: @nhfizhn, @jadotj, @nichongy, @AzharAmiin
 - other tasks…
