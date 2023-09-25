@@ -119,10 +119,9 @@ To enhance the interpretation of the plot, we added a legend-like information se
 
 **Outcome:**
 
+![](primes freq plot.jpeg)
+
 - Generated a visualization that visually represents the distribution of prime numbers within *Collatz* sequences.
-
-![Freq of Prime Numbers in Collatz Sequences](primes freq plot.jpeg)
-
 - The legend addition provides key statistics, including the maximum, minimum, and average prime counts, aiding in the interpretation of the plot and providing insights into the distribution of prime numbers within the sequences.
 
 
