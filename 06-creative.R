@@ -1,3 +1,4 @@
+#prime lengths vs non prime lengths
 prime_lengths <- (filter(primes_df, prime == TRUE))$length
 non_prime_lengths <- (filter(primes_df, prime == FALSE))$length
 
@@ -10,3 +11,13 @@ ggplot(length_comparison, aes(x = group, y = sequence_length, fill = group)) +
   geom_boxplot() +
   labs(x = "Group", y = "Sequence Length") +
   ggtitle("Comparison of Sequence Lengths for Prime and Non-Prime Starting Integers")
+
+#frequency each prime number appears in a sequence
+freq_prime <- (collatz_df$seq)[-1] %>%
+  unlist() %>%
+  table() %>%
+  as.data.frame() %>%
+  mutate(., prime = is_prime(.)) %>%
+  filter(., prime == TRUE) %>%
+  arrange(., desc(Freq))
+  
