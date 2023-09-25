@@ -180,7 +180,7 @@ We also aimed to visualise the frequency of *Collatz* sequence lengths generated
 
 **Outcome:**
 
-![Freq of unique sequence lengths](Rplot6.png)
+![Freq of unique sequence lengths](Rplot6.jpeg)
 
 - Identified *Collatz* sequence lengths counts.
 - Represented the distribution of *Collatz* sequence lengths and their frequencies.
