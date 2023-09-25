@@ -66,7 +66,7 @@ sequence_length_df <- data.frame(Length = sequence_lengths)
 ggplot(sequence_length_df, aes(x = Length)) +
   geom_bar() +
   labs(
-    title = "Bar Plot of Collatz Sequence Lengths (Unique Sequences)",
+    title = "Frequence of Sequence Lengths",
     x = "Sequence Length",
     y = "Frequency"
   ) +
