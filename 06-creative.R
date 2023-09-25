@@ -20,4 +20,9 @@ freq_prime <- (collatz_df$seq)[-1] %>%
   mutate(., prime = is_prime(.)) %>%
   filter(., prime == TRUE) %>%
   arrange(., desc(Freq))
+colnames(freq_prime) <- c("start", "freq", "prime")
   
+ggplot(freq_prime, aes (x = 1:2432, y = freq))+
+  geom_line() 
+
+
