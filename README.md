@@ -110,7 +110,7 @@ We conducted an open-ended exploration of the data, focusing on the frequency of
 
 **Outcome:**
 
-The following result is produced, showing the top 10 most frequently occuring prime numbers:
+The following result is produced, showing the top 10 most frequently occurring prime numbers:
 |Prime Number|Frequency|
 |:-----:|:-----:|
 |5|9400|
@@ -139,9 +139,11 @@ The following result is produced, showing the top 10 most frequently occuring pr
 
 5 digit prime is $29524$ occurring 268 times.
 
-### 6) Creative visualisation challenge - Visualising Prime Counts in *Collatz Conjecture*
+### 6) Creative visualisation challenge 
 
-In this task, we aimed to visualize the frequency of prime numbers within *Collatz* sequences for integers ranging from $1$ to $10,000$. The process involved calculating the count of prime numbers in each sequence and creating a bar chart to represent this data.
+#### 6.1) Visualising Prime Counts in *Collatz Conjecture*
+
+We aimed to visualize the frequency of prime numbers within *Collatz* sequences for integers ranging from $1$ to $10,000$. The process involved calculating the count of prime numbers in each sequence and creating a bar chart to represent this data.
 
 **Implementation:**
 
@@ -150,7 +152,7 @@ In this task, we aimed to visualize the frequency of prime numbers within *Colla
 - A loop iterated through integers from $1$ to $10,000$, generating the *Collatz* sequence for each and counting the prime numbers.
 - The resulting prime counts were stored in the `prime_counts` vector.
 
-**Visualization:**
+**Visualisation:**
 
 - We employed the `{ggplot2}` library to create a bar chart (`collatz_prime_plot`) that displays the prime counts for each starting integer.
 - The x-axis represents the starting integers, ranging from $1$ to $10,000$, while the y-axis represents the count of prime numbers within the *Collatz* sequences.
@@ -167,7 +169,26 @@ To enhance the interpretation of the plot, we added a legend-like information se
 - Generated a visualization that visually represents the distribution of prime numbers within *Collatz* sequences.
 - The legend addition provides key statistics, including the maximum, minimum, and average prime counts, aiding in the interpretation of the plot and providing insights into the distribution of prime numbers within the sequences.
 
+#### 6.2) Visualising Frequency of Sequence Lengths
 
+We also aimed to visualise the frequency of unique *Collatz* sequences generated for integers ranging from $1$ to $10,000$. The objective was to identify and  visualise how many unique sequences exist and how often each sequence length occurs.
+
+**Implementation:**
+
+- Initialized an empty list, `unique_sequences`, to store unique *Collatz* sequences.
+- Converted each sequence with starting integer from $1$ to $10,000$ into a string representation, `collatz_str`.
+- Checked if `collatz_str` was already in `unique_sequences`, and if not, appended it.
+- Counted the total number of unique Collatz sequences as `num_unique_sequences`.
+- Calculated the lengths of unique sequences by splitting each sequence string and counting the elements.
+- Created a data frame, `sequence_length_df`, with a "Length" column containing the sequence lengths.
+- Used `{ggplot2}` to create a bar plot visualizing the frequency of sequence lengths. The x-axis represented sequence lengths, and the y-axis represented frequency.
+
+**Outcome:**
+
+![Freq of unique sequence lengths](Rplot6.png)
+
+- Identified unique *Collatz* sequence lengths counts.
+- Represented the distribution of unique *Collatz* sequence lengths and their frequencies.
 
 #### Contribution declaration
 
@@ -176,5 +197,5 @@ To enhance the interpretation of the plot, we added a legend-like information se
 - Task 3: @nichongy
 - Task 4: @AzharAmiin
 - Task 5: @nichongy
-- Task 6: @nhfizhn
+- Task 6: @nhfizhn, @jadotj
 - README: @nhfizhn, @jadotj, @nichongy, @AzharAmiin
