@@ -80,15 +80,17 @@ Extractions of the individual average length and standard deviation values for e
 
 ### 4) Visualisations
 
-**Part (1)** 
+In this task, we utilized the `{ggplot2}` library to create appropriate visualizations that represent the data wrangling tasks previously performed.
+
+**Part (1)** Scatterplot of Sequence Lengths
 
 ![Scatterplot of Sequence Lengths and Starting Integers](Rplot1.jpeg)
 
-**Part (2)**
+**Part (2)** Scatterplot of Highest Sequence Values
 
 ![Scatterplot of Max Values and Starting Integers](Rplot2.jpeg)
 
-**Part (3)**
+**Part (3)** Boxplot Comparing Sequence Lengths Distributions
 
 ![Boxplot of Parity and Length](Rplot3.jpeg)
 
