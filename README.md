@@ -100,12 +100,12 @@ We conducted an open-ended exploration of the data, focusing on the frequency of
 
 **Implementation:**
 
--The list of all sequences with starting integers from $1$ to $10000$ were taken and flattened.
--The frequencies of each occurring number were found and filtered to only include prime numbers (excluding 2).
+- The list of all sequences with starting integers from $1$ to $10000$ were taken and flattened.
+- The frequencies of each occurring number were found and filtered to only include prime numbers (excluding 2).
 
 **Outcome:**
 
--The following result is produced, showing the top 10 most frequently occuring prime numbers:
+The following result is produced, showing the top 10 most frequently occuring prime numbers:
 |Prime Number|Frequency|
 |:-----:|:-----:|
 |5|9400|
@@ -121,8 +121,8 @@ We conducted an open-ended exploration of the data, focusing on the frequency of
 
 **Some Observations:**
 
--Although $2$ occurs in all sequences (except for when the starting integer is $1$) and $5$ occurs in 94% of sequences, $3$ only occurs 12 times.
--The most frequently occurring
+- Although $2$ occurs in all sequences (except for when the starting integer is $1$) and $5$ occurs in 94% of sequences, $3$ only occurs 12 times.
+- The most frequently occurring
 
 1 digit prime after $2$ and $5$ is $7$ occurring 1848 times;
 
