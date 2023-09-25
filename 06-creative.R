@@ -33,9 +33,7 @@ collatz_prime_plot <- ggplot() +
 # display the plot
 print(collatz_prime_plot)
 
-#2 bar plot of Collatz unique sequences-------------------------------------
-
-library(dplyr)
+#2 bar plot of Collatz unique sequences and its frequence-------------------------------------
 
 #to Create a vector to store the unique sequences
 unique_sequences <- list()
@@ -57,11 +55,6 @@ num_unique_sequences <- length(unique_sequences)
 
 # Print the number of unique sequences
 cat("Number of unique Collatz sequences:", num_unique_sequences)
-
-# Load necessary libraries
-library(ggplot2)
-
-# Assuming you already have the unique_sequences list
 
 # Count the lengths of unique sequences
 sequence_lengths <- sapply(unique_sequences, function(seq_str) length(unlist(strsplit(seq_str, ","))))
