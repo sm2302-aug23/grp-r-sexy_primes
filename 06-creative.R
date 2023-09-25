@@ -35,17 +35,15 @@ print(collatz_prime_plot)
 
 #2 bar plot of Collatz unique sequences-------------------------------------
 
-# Load necessary libraries
 library(dplyr)
 
-# Create a vector to store the unique sequences
+#to Create a vector to store the unique sequences
 unique_sequences <- list()
 
 # Loop through starting integers from 1 to 10,000
 for (i in 1:10000) {
   collatz_seq <- gen_collatz(i)  # Generate Collatz sequence
   
-  # Convert the sequence to a character string for comparison
   collatz_str <- toString(collatz_seq)
   
   # Check if the sequence is already in the list of unique sequences
