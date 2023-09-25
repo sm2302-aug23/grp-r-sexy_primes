@@ -175,8 +175,8 @@ We also aimed to visualise the frequency of *Collatz* sequence lengths generated
 
 **Implementation:**
 
--Subset the `length` column from `collatz_df`
--Created a bar plot visualising the frequency of sequence lengths. The x-axis represented sequence lengths, and the y-axis represented frequency.
+- Subset the `length` column from `collatz_df`
+- Created a bar plot visualising the frequency of sequence lengths. The x-axis represented sequence lengths, and the y-axis represented frequency.
 
 **Outcome:**
 
