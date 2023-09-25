@@ -13,7 +13,9 @@ freq_prime <- (collatz_df$seq)[-1] %>%
   arrange(., desc(Freq)) %>%
   subset(., select = -prime)
 
+#changing the column names
 (colnames(freq_prime) <- c("start", "freq"))
 
+#creating a new df of most freq occuring primes excluding 2
 top_10_freq_primes <- freq_prime[2:11,]
 rownames(top_10_freq_primes) <- c(1:10)
