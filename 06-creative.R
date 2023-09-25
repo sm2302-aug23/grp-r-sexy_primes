@@ -12,12 +12,23 @@ for (i in 1:10000) {
   prime_counts[i] <- prime_count
 }
 
+# calculate maximum, minimum, and average prime counts
+max_prime_count <- max(prime_counts)
+min_prime_count <- min(prime_counts)
+avg_prime_count <- mean(prime_counts)
+
 # visualisation
 library(ggplot2)
 
 collatz_prime_plot <- ggplot() +
   geom_bar(mapping = aes(x = 1:10000, y = prime_counts), stat = "identity") +
-  labs(x = "Starting Integers", y = "Count of Prime Numbers", title = "Frequency of Prime Numbers in Collatz Sequences")
+  labs(x = "Starting Integers", 
+       y = "Count of Prime Numbers", 
+       title = "Frequency of Prime Numbers in Collatz Sequences") +
+  theme_minimal() +
+  labs(subtitle = paste("Max Prime Count:", max_prime_count, 
+                        "| Min Prime Count:", min_prime_count, 
+                        "| Avg Prime Count:", round(avg_prime_count, 2)))
 
 # display the plot
 print(collatz_prime_plot)
