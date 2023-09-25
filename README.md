@@ -123,10 +123,15 @@ We conducted an open-ended exploration of the data, focusing on the frequency of
 
 -Although $2$ occurs in all sequences (except for when the starting integer is $1$) and $5$ occurs in 94% of sequences, $3$ only occurs 12 times.
 -The most frequently occurring
+
 1 digit prime is $5$ occurring 9400 times;
+
 2 digit prime is $53$ occurring 4693 times;
+
 3 digit prime is $433$ occurring 4148 times;
+
 4 digit prime is $1367$ occurring 4003 times;
+
 5 digit prime is $29524$ occurring 268 times.
 
 ### 6) Creative visualisation challenge - Visualising Prime Counts in *Collatz Conjecture*
