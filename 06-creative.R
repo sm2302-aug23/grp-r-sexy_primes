@@ -33,7 +33,7 @@ collatz_prime_plot <- ggplot() +
 # display the plot
 print(collatz_prime_plot)
 
-#2 bar plot of Collatz unique sequences and its frequence-------------------------------------
+#2 bar plot of Collatz unique sequences and its frequency -------------------------------------
 
 #to Create a vector to store the unique sequences
 unique_sequences <- list()
@@ -66,7 +66,7 @@ sequence_length_df <- data.frame(Length = sequence_lengths)
 ggplot(sequence_length_df, aes(x = Length)) +
   geom_bar() +
   labs(
-    title = "Frequence of Sequence Lengths",
+    title = "Frequency of Sequence Lengths",
     x = "Sequence Length",
     y = "Frequency"
   ) +
