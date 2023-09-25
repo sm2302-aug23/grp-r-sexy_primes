@@ -94,6 +94,11 @@ In this task, we utilized the `{ggplot2}` library to create appropriate visualiz
 
 ![Boxplot of Parity and Length](Rplot3.jpeg)
 
+**Question : Are there any noticeable differences?**
+
+- Through these boxplots, we may observe that the *odd numbers* have generated *longer sequences* than *even numbers*.
+- Also, *outliers* may be observed just beyond the maximum value of the *odd parity boxplot* while there exists *none* within the extremes of the *even boxplot*.
+
 ### 5) Open-ended exploration - Frequency of Prime Numbers
 
 We conducted an open-ended exploration of the data, focusing on the frequency of prime numbers within Collatz sequences. The primary goal was to identify the prime numbers that appear most frequently in the sequences.
