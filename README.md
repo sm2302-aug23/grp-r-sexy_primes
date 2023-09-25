@@ -102,14 +102,14 @@ In this task, we aimed to visualize the frequency of prime numbers within *Colla
 
 **Implementation:**
 
-- We utilized the `primes` library to efficiently check for prime numbers within the sequences.
+- We utilized the `{primes}` library to efficiently check for prime numbers within the sequences.
 - A vector, `prime_counts`, was created to store the count of prime numbers for each starting integer.
 - A loop iterated through integers from $1$ to $10,000$, generating the *Collatz* sequence for each and counting the prime numbers.
 - The resulting prime counts were stored in the `prime_counts` vector.
 
 **Visualization:**
 
-- We employed the `ggplot2` library to create a bar chart (`collatz_prime_plot`) that displays the prime counts for each starting integer.
+- We employed the `{ggplot2}` library to create a bar chart (`collatz_prime_plot`) that displays the prime counts for each starting integer.
 - The x-axis represents the starting integers, ranging from $1$ to $10,000$, while the y-axis represents the count of prime numbers within the *Collatz* sequences.
 - A minimalistic theme was applied to the plot for clarity.
 
@@ -131,7 +131,7 @@ To enhance the interpretation of the plot, we added a legend-like information se
 - Task 1: @nhfizhn
 - Task 2: @jadotj
 - Task 3: @nichongy
-- Task 4: @AzharAmiin, @nhfizhn
+- Task 4: @AzharAmiin
 - Task 5: @nichongy
 - Task 6: @nhfizhn
 - README: @nhfizhn, @jadotj, @nichongy, @AzharAmiin
