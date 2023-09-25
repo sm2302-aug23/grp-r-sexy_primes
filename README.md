@@ -94,7 +94,7 @@ In this task, we utilized the `{ggplot2}` library to create appropriate visualiz
 
 ![Boxplot of Parity and Length](Rplot3.jpeg)
 
-### 5) Open-ended exploration
+### 5) Open-ended exploration - Frequency of Prime Numbers
 
 We conducted an open-ended exploration of the data, focusing on the frequency of prime numbers within Collatz sequences. The primary goal was to identify the prime numbers that appear most frequently in the sequences.
 
@@ -140,7 +140,7 @@ In this task, we aimed to visualize the frequency of prime numbers within *Colla
 
 **Implementation:**
 
-- We utilized the `{primes}` library to efficiently check for prime numbers within the sequences.
+- We utilized the `{primes}` package to efficiently check for prime numbers within the sequences.
 - A vector, `prime_counts`, was created to store the count of prime numbers for each starting integer.
 - A loop iterated through integers from $1$ to $10,000$, generating the *Collatz* sequence for each and counting the prime numbers.
 - The resulting prime counts were stored in the `prime_counts` vector.
