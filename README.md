@@ -81,13 +81,13 @@ Extractions of the individual average length and standard deviation values for e
 ### 4) Visualisations
 
 **Part (1)** 
-![Scatterplot of Sequence Lengths and Starting Integers](Plot#1.jpeg)
+![Scatterplot of Sequence Lengths and Starting Integers](Rplot1.jpeg)
 
 **Part (2)**
-![Scatterplot of Max Values and Starting Integers](Plot#2.jpeg)
+![Scatterplot of Max Values and Starting Integers](Rplot2.jpeg)
 
 **Part (3)**
-![Boxplot of Parity and Length](Plot#3.jpeg)
+![Boxplot of Parity and Length](Rplot3.jpeg)
 
 
 
